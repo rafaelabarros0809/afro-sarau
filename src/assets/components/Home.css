@@ -1,0 +1,275 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  overflow-x: hidden;
+}
+
+/* SEÇÃO PRINCIPAL */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEM DE FUNDO E DEGRADÊ */
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 80%;
+  object-fit: cover;
+  z-index: 0;
+  margin-left: 20%;
+  margin-top: 5px;
+}
+
+.overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 10, 10, 0.95) 0%,
+    rgba(10, 10, 10, 0.85) 35%,
+    rgba(10, 10, 10, 0.3) 70%,
+    rgba(10, 10, 10, 0.1) 100%
+  );
+  z-index: 1;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%; /* Permite ocupar a largura inteira da tela */
+  margin: 0;
+  padding: 30px 40px; /* Margem interna nas bordas da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* TOPO: LOGO E CITAÇÃO */
+.top-badge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+
+
+/* TÍTULOS E DESCRICÃO */
+
+.home-container{
+  margin-top: 100px;
+}
+
+
+
+
+.home-container h1 {
+  font-size: 130px;
+  color: #c9a050;
+  font-weight: normal;
+  line-height: 0.9;
+  letter-spacing: -1px;
+  margin-left: 150px;
+}
+
+
+.subtitulo {
+  font-size: 30px;
+  color: #ffffff;
+  margin: 12px 0 25px 0;
+  letter-spacing: 0.5px;
+  margin-left: 150px;
+}
+
+.descricao-box {
+  border: 1px solid rgba(201, 160, 80, 0.4);
+  padding: 20px;
+  max-width: 560px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+   margin-left: 150px;
+}
+
+.descricao {
+  font-size: 18px;
+  color: #d8d8d8;
+  line-height: 1.5;
+
+}
+
+/* VOZES QUE INSPIRAM */
+.vozes {
+  margin-top: 40px;
+}
+
+.vozes-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.vozes-header h2 {
+  color: #c9a050;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.linha-decorativa {
+  flex: 1.5;
+  width: 30%;
+  max-width: 30%; /* A linha expande até o final da tela */
+  height: 2px;
+  background: rgba(201, 160, 80, 0.4);
+}
+
+.vozes-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.img-wrapper {
+  position: relative;
+  min-width: 110px;
+  width: 240px;
+  height: 260px;
+  border: 1px solid #c9a050;
+  margin-bottom: 70px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(30%);
+}
+
+.play-icon {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #c9a050;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  color: #c9a050;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-info p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.card-info span {
+  font-size: 20px;
+  color: #c9a050;
+  font-style: italic;
+}
+
+/* RODAPÉ / SOBRE */
+.sobre {
+  display: flex;
+  justify-content: space-between; /* Espalha as colunas uniformemente */
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+.sobre-coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-coluna h2 {
+  color: #c9a050;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.sobre-coluna h3 {
+  font-size: 12px;
+  color: #888888;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.sobre-coluna p {
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.sobre-coluna .escola {
+  color: #888888;
+  text-align: right;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 900px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .home-container h1 {
+    font-size: 55px;
+  }
+
+  .vozes-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .sobre-coluna .escola {
+    text-align: left;
+  }
+}
