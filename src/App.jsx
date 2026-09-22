@@ -7,6 +7,10 @@ import Home from "./assets/components/Home";
 
 import Galeria from "./assets/components/Galeria";
 
+import GaleriaMusica from "./assets/components/GaleriaMusica";
+
+import GaleriaBatuque from "./assets/components/GaleriaBatuque";
+
 import "./App.css";
 
 function App() {
@@ -17,6 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/galeria" element={<Galeria />} />
+        <Route path="/musicas" element={<GaleriaMusica />} />
+        <Route path="/batuque" element={<GaleriaBatuque/>}/>
       </Routes>
     </HashRouter>
   );

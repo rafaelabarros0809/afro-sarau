@@ -1,0 +1,1050 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.galeria-page {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   SECTION MEMÓRIAS
+===================================================== */
+
+.memorias {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 30px;
+    align-items: center;
+}
+
+
+/* =====================================================
+   CONTEÚDO DA ESQUERDA
+===================================================== */
+
+.memorias-conteudo h1 {
+    color: #B68A35;
+    font-size: 130px;
+    margin-top: 50px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.frase-memorias {
+    margin-bottom: 25px;
+    color: #d5d5d5;
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+
+/* =====================================================
+   PRINCIPAIS BUSCAS
+===================================================== */
+
+.memorias-conteudo h2 {
+    margin-bottom: 7px;
+    color: #d0d0d0;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.principaisBuscas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.busca-card {
+    width: 230px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    border: 1px solid #B68A35;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+
+.busca-card:hover {
+    transform: translateY(-3px);
+}
+
+
+.busca-card img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+.busca-card span {
+    padding: 8px 4px;
+    color: #B68A35;
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+
+/* =====================================================
+   FOTO DA PARTE MEMÓRIAS
+===================================================== */
+
+.memorias-fots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.memorias-fots img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid #B68A35;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    margin-top: 1px;
+}
+
+
+.memorias-fots p {
+    margin-top: 12px;
+    color: #B68A35;
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* =====================================================
+   CATEGORIAS
+===================================================== */
+
+.categorias {
+    margin-top: 70px;
+}
+
+
+.categorias h3 {
+    margin-bottom: 8px;
+    color: #B68A35;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.linha-decorativa {
+    width: 700px;
+    height: 2px;
+    background: rgba(201, 160, 80, 0.4);
+    margin-top: -10px;
+}
+
+
+.categorias-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+
+.categorias-links a {
+    color: #bdbdbd;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+
+.categorias-links a:hover {
+    color: #B68A35;
+}
+
+
+/* =====================================================
+   SECTION FOTOGRAFIAS
+===================================================== */
+
+.fotografias {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   FUNDOS
+===================================================== */
+
+.fundo-geral {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+.fundo-geral img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 15%;
+    display: block;
+}
+
+
+.fundo-geral2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+.fundo-geral2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 18%;
+    display: block;
+}
+
+
+.fundo-geral3 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+
+.fundo-geral3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 20%;
+    display: block;
+}
+
+
+.fotografias-fundo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+.fotografias-fundo img {
+    width: 650px;
+    height: 900px;
+    object-fit: cover;
+    margin-left: 20px;
+    display: block;
+    opacity: 45%;
+}
+
+
+/* =====================================================
+   INFORMAÇÕES
+===================================================== */
+
+.fotografias-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.fotografias-info h1 {
+    color: #B68A35;
+    font-size: 70px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.fotografias-info > button {
+    align-self: flex-start;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 1px solid #8a692d;
+    color: #cfcfcf;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+
+.fotografias-info > button:hover {
+    background-color: #B68A35;
+}
+
+
+.fotografias-info h2 {
+    margin: 30px 0 10px;
+    color: #B68A35;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.fotografias-info > p {
+    width: 130%;
+    padding: 20px;
+    border: 1px solid #765b2b;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #c7c7c7;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: -1px;
+}
+
+
+/* =====================================================
+   FOTO DESTAQUE
+===================================================== */
+
+.fotografias-destaque {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    overflow: hidden;
+    border: 1px solid #B68A35;
+}
+
+
+.fotografias-destaque img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.fotografias-destaque img:hover {
+    transform: scale(1.05);
+}
+
+
+.fotografias-info h3 {
+    margin-top: 10px;
+    color: #B68A35;
+    font-size: 0.95rem;
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+
+/* =====================================================
+   BOTÕES
+===================================================== */
+
+.fotografias-botoes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+
+.fotografias-botoes button {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #B68A35;
+    color: #d0d0d0;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.fotografias-botoes button:hover {
+    background-color: #B68A35;
+    color: #121212;
+}
+
+
+.fotografias-botoes button:last-child {
+    border: none;
+    color: #B68A35;
+    padding: 8px 0;
+}
+
+
+.fotografias-botoes button:last-child:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   MOSAICO
+===================================================== */
+
+.fotosmosaico {
+    position: relative;
+    z-index: 2;
+
+    width: 354px;
+    height: 445px;
+
+    padding: 0;
+
+    margin-left: 270px;
+
+    box-sizing: border-box;
+
+    transform: scale(1.6);
+    transform-origin: top left;
+
+    border: 2px solid #B68A35;
+
+    background-color: #bdbdbd67;
+}
+
+
+.fotosmosaico > div {
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #111111;
+}
+
+
+.fotosmosaico img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+.fotosmosaico img:hover {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   FOTO 1
+===================================================== */
+
+.foto1 {
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 150px;
+}
+
+
+/* =====================================================
+   FOTO 2
+===================================================== */
+
+.foto2 {
+    left: 163px;
+    top: 0;
+    width: 90px;
+    height: 90px;
+}
+
+
+/* =====================================================
+   FOTO 3
+===================================================== */
+
+.foto3 {
+    left: 260px;
+    top: 0;
+    width: 90px;
+    height: 90px;
+}
+
+
+/* =====================================================
+   FOTO 4
+===================================================== */
+
+.foto4 {
+    left: 163px;
+    top: 98px;
+    width: 187px;
+    height: 60px;
+}
+
+
+/* =====================================================
+   FOTO 5
+===================================================== */
+
+.foto5 {
+    left: 0;
+    top: 163px;
+    width: 150px;
+    height: 275px;
+}
+
+
+/* =====================================================
+   FOTO 6
+===================================================== */
+
+.foto6 {
+    left: 163px;
+    top: 163px;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* =====================================================
+   FOTO 7
+===================================================== */
+
+.foto7 {
+    left: 225px;
+    top: 163px;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* =====================================================
+   FOTO 8
+===================================================== */
+
+.foto8 {
+    left: 286px;
+    top: 163px;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* =====================================================
+   FOTO 9
+===================================================== */
+
+.foto9 {
+    left: 286px;
+    top: 228px;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* =====================================================
+   FOTO 10
+===================================================== */
+
+.foto10 {
+    left: 225px;
+    top: 228px;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* =====================================================
+   FOTO 11
+===================================================== */
+
+.foto11 {
+    left: 163px;
+    top: 228px;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* =====================================================
+   FOTO 12
+===================================================== */
+
+.foto12 {
+    left: 163px;
+    top: 294px;
+    width: 90px;
+    height: 70px;
+}
+
+
+/* =====================================================
+   FOTO 13
+===================================================== */
+
+.foto13 {
+    left: 257px;
+    top: 294px;
+    width: 90px;
+    height: 70px;
+}
+
+
+/* =====================================================
+   FOTO 14
+===================================================== */
+
+.foto14 {
+    left: 163px;
+    top: 368px;
+    width: 187px;
+    height: 70px;
+}
+
+
+/* =====================================================
+   CARROSSEL OVERLAY
+   IMPORTANTE:
+   FICA FORA DO @MEDIA
+===================================================== */
+
+.carrossel-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+
+    background: #bdbdbd67;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999999;
+
+    overflow: hidden;
+
+    padding: 20px;
+
+    isolation: isolate;
+}
+
+
+/* =====================================================
+   CONTEÚDO DO CARROSSEL
+===================================================== */
+
+.carrossel-conteudo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    width: auto;
+    max-width: 90vw;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   ITEM DO CARROSSEL
+===================================================== */
+
+.carrossel-item {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #111111;
+
+    border: 1px solid #B68A35;
+
+    border-radius: 2px;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+
+.carrossel-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =====================================================
+   FOTOS LATERAIS
+===================================================== */
+
+.carrossel-item.foto-secundaria {
+    width: 120px;
+    height: 170px;
+
+    opacity: 0.55;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.carrossel-item.foto-secundaria:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+
+.carrossel-item.foto-secundaria img {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   FOTO CENTRAL
+===================================================== */
+
+.carrossel-item.foto-principal {
+    width: 250px;
+    height: 330px;
+
+    border: 2px solid #B68A35;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.65);
+
+    background: #111111;
+}
+
+
+.carrossel-item.foto-principal img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   SETAS
+===================================================== */
+
+.carrossel-seta {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    border: 1px solid #B68A35;
+
+    color: #B68A35;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 1000001;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.carrossel-seta:hover {
+    background: #B68A35;
+    color: #121212;
+
+    transform: translateY(-50%) scale(1.05);
+}
+
+
+.carrossel-seta.esquerda {
+    left: 25px;
+}
+
+
+.carrossel-seta.direita {
+    right: 25px;
+}
+
+
+/* =====================================================
+   BOTÃO FECHAR
+===================================================== */
+
+.carrossel-fechar {
+    position: absolute;
+
+    top: 18px;
+    right: 25px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    border: 1px solid #B68A35;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 1000001;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.carrossel-fechar:hover {
+    background: #B68A35;
+    color: #121212;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .memorias {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    .fotografias {
+        grid-template-columns: 1fr;
+    }
+
+
+    .fotosmosaico {
+        margin-left: 100px;
+        transform: scale(1.2);
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .memorias-conteudo h1 {
+        font-size: 80px;
+    }
+
+
+    .memorias-fots img {
+        width: 90%;
+        height: auto;
+    }
+
+
+    .linha-decorativa {
+        width: 100%;
+    }
+
+
+    .fotografias-info {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+
+    .fotografias-info > p {
+        width: 100%;
+    }
+
+
+    .fotosmosaico {
+        margin-left: 20px;
+        transform: scale(0.95);
+    }
+
+
+    /* CARROSSEL */
+
+    .carrossel-conteudo {
+        gap: 10px;
+    }
+
+
+    .carrossel-item.foto-secundaria {
+        width: 80px;
+        height: 120px;
+    }
+
+
+    .carrossel-item.foto-principal {
+        width: 200px;
+        height: 280px;
+    }
+
+
+    .carrossel-seta.esquerda {
+        left: 10px;
+    }
+
+
+    .carrossel-seta.direita {
+        right: 10px;
+    }
+
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .carrossel-conteudo {
+        gap: 7px;
+    }
+
+
+    .carrossel-item.foto-secundaria {
+        width: 55px;
+        height: 85px;
+    }
+
+
+    .carrossel-item.foto-principal {
+        width: 170px;
+        height: 240px;
+    }
+
+
+    .carrossel-seta {
+        width: 36px;
+        height: 36px;
+
+        font-size: 24px;
+    }
+
+
+    .carrossel-seta.esquerda {
+        left: 5px;
+    }
+
+
+    .carrossel-seta.direita {
+        right: 5px;
+    }
+
+
+    .carrossel-fechar {
+        top: 10px;
+        right: 10px;
+
+        width: 36px;
+        height: 36px;
+
+        font-size: 26px;
+    }
+
+}

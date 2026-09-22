@@ -116,7 +116,7 @@ export function Home() {
 
               <div className="card-info">
                 <p>
-                  "A diversidade precisa ser a regra,<br /> não a exceção."
+                  "A diversidade precisa ser <br /> a regra, não a exceção."
                 </p>
 
                 <span>- Rihanna</span>

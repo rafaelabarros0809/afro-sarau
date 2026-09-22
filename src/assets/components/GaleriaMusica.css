@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+/* =========================================================
+   PÁGINA DE MÚSICAS
+   ========================================================= */
+
+.Musica {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Cormorant Garamond', serif;
+
+    background:
+        radial-gradient(
+            circle at 60% 50%,
+            rgba(193, 164, 1, 0.267) 40%,
+            rgba(129, 124, 33, 0.266) 75%,
+            #17100a51 100%
+        );
+}
+
+/* =========================================================
+   FUNDOS
+   ========================================================= */
+
+.fotografias-fundo,
+.fundo-geral,
+.fundo-geral2,
+.fundo-geral3 {
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.fotografias-fundo img,
+.fundo-geral img,
+.fundo-geral2 img,
+.fundo-geral3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* fundo da parte esquerda */
+
+.fotografias-fundo {
+    left: 0;
+    top: 0;
+    width: 42%;
+    height: 100%;
+    opacity: 0.35;
+}
+
+/* fundo atrás da playlist */
+
+.fundo-geral {
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    opacity: 20%;
+}
+
+/* brilho central */
+
+.fundo-geral2 {
+    top: 0;
+    right: 35%;
+    width: 25%;
+    height: 100%;
+    opacity: 0.15;
+}
+
+/* brilho da direita */
+
+.fundo-geral3 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.35;
+}
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+.mosaicosInfos {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 25px 3% 120px;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   PARTE ESQUERDA
+   ========================================================= */
+
+.mosaicosInfos > h1 {
+    position: absolute;
+    left: 4%;
+    top: 18px;
+    margin: 0;
+    color: #b68a35;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.mosaicosInfos > button {
+    position: absolute;
+    left: 4%;
+    top: 82px;
+    width: 195px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid #b68a35;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mosaicosInfos > button:hover {
+    background: #b68a35;
+    color: #17130d;
+}
+
+/* =========================================================
+   SOBRE
+   ========================================================= */
+
+.mosaicosInfos > h2 {
+    position: absolute;
+    left: 4%;
+    top: 130px;
+    margin: 0;
+    color: #b68a35;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.mosaicosInfos > p {
+    position: absolute;
+    left: 4%;
+    top: 175px;
+    width: 35%;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #b68a35;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.35;
+    text-align: justify;
+}
+
+/* =========================================================
+   CAPA DESTAQUE
+   ========================================================= */
+
+.CapaDestaque {
+    position: absolute;
+    left: 4%;
+    top: 305px;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.CapaDestaque img {
+    width: 145px;
+    height: 165px;
+    object-fit: cover;
+    border: 2px solid #b68a35;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.textoDescricacao {
+    color: #ffffff;
+}
+
+.textoDescricacao p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.textoDescricacao span {
+    display: block;
+    margin-bottom: 5px;
+    color: #b68a35;
+    font-size: 18px;
+}
+
+/* =========================================================
+   BOTÕES INFERIORES DA ESQUERDA
+   ========================================================= */
+
+.Musica-botoes {
+    position: absolute;
+    left: 4%;
+    top: 475px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.Musica-botoes button {
+    height: 40px;
+    padding: 0 30px;
+    background: transparent;
+    border: 2px solid #b68a35;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Musica-botoes button:last-child {
+    border: none;
+    padding: 0;
+    color: #b68a35;
+}
+
+/* =========================================================
+   PLAYLIST
+   ========================================================= */
+
+.playlist {
+    grid-column: 2;
+    width: 95%;
+    height: 475px;
+    margin-left: auto;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: rgba(90, 65, 35, 0.42);
+    border: 1px solid rgba(182, 138, 53, 0.25);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #b68a35 transparent;
+}
+
+/* título Playlist */
+
+.playlist > h2 {
+    margin: 0 0 8px 0;
+    color: #b68a35;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* barra de rolagem */
+
+.playlist::-webkit-scrollbar {
+    width: 4px;
+}
+
+.playlist::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    background: #b68a35;
+}
+
+/* =========================================================
+   ITEM DA MÚSICA
+   ========================================================= */
+
+.musica-item {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 7px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border: 1px solid #8f6b2e;
+    background: rgba(85, 62, 34, 0.35);
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        transform 0.2s ease;
+}
+
+.musica-item:hover {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* música selecionada */
+
+.musica-item.musica-selecionada {
+    background: rgba(0, 0, 0, 0.65);
+    border-color: #b68a35;
+}
+
+/* =========================================================
+   NÚMERO
+   ========================================================= */
+
+.numero {
+    width: 28px;
+    color: #ffffff;
+    font-size: 11px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   CAPA DA MÚSICA
+   ========================================================= */
+
+.musica-item > img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   NOME + ARTISTA
+   ========================================================= */
+
+.musica-info {
+    min-width: 0;
+    flex: 1;
+    overflow: hidden;
+}
+
+.musica-info h3 {
+    margin: 0;
+    color: #b68a35;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.musica-info p {
+    margin: 2px 0 0;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+/* =========================================================
+   DURAÇÃO
+   ========================================================= */
+
+.duracao {
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   BOTÃO "..."
+   ========================================================= */
+
+.mais {
+    width: 30px;
+    margin-left: 8px;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* =========================================================
+   PLAYER INFERIOR
+   ========================================================= */
+
+.player-musica {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 105px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 12px 4%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 17, 12, 0.98),
+            rgba(55, 40, 20, 0.97),
+            rgba(20, 17, 12, 0.98)
+        );
+
+    border-top: 2px solid #b68a35;
+    z-index: 9999;
+}
+
+/* =========================================================
+   INFORMAÇÕES DA MÚSICA NO PLAYER
+   ========================================================= */
+
+.player-info {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.player-info img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 1px solid #000;
+}
+
+.player-info h3 {
+    margin: 0 0 4px;
+    color: #b68a35;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.player-info p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+/* =========================================================
+   FAVORITO
+   ========================================================= */
+
+.botao-favorito {
+    width: 35px;
+    height: 35px;
+    margin: 0 25px;
+    background: transparent;
+    border: none;
+    color: #b68a35;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-favorito:hover {
+    transform: scale(1.15);
+}
+
+.botao-favorito.favoritado {
+    color: #b68a35;
+}
+
+/* =========================================================
+   LINHA DO PLAYER
+   ========================================================= */
+
+.player-linha {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.linha-musica {
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.player-linha span {
+    color: #ffffff;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   BOTÃO OUVIR
+   ========================================================= */
+
+.botao-ouvir {
+    width: 120px;
+    height: 40px;
+    margin-left: 25px;
+    background: transparent;
+    border: 2px solid #b68a35;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-ouvir:hover {
+    background: #b68a35;
+    color: #17130d;
+}
+
+/* =========================================================
+   PRIMEIRA PARTE DA PÁGINA
+   ========================================================= */
+
+.primeiraParte {
+    position: relative;
+    min-height: 430px;
+    padding: 20px 2%;
+    box-sizing: border-box;
+    background: #050505;
+    color: #ffffff;
+    margin-top: 100px;
+}
+
+.fotos-Conteudo {
+    position: relative;
+    width: 100%;
+    min-height: 190px;
+    margin-top: -2px;
+}
+
+.fotos-Conteudo > h2 {
+    color: #b68a35;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.fotos-Conteudo > p {
+    width: 80%;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: justify;
+    word-spacing: 5px;
+}
+
+.fotos-Conteudo > p span {
+    color: #b68a35;
+}
+
+/* =========================================================
+   BLACK LIVES MATTER
+   ========================================================= */
+
+.imagem-Info-BlackLives {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+.imagem-Info-BlackLives img {
+    width: 280px;
+    height: 200px;
+    margin-top: -29px;
+    object-fit: cover;
+    border: 2px solid #b68a35;
+}
+
+.imagem-Info-BlackLives .info p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.imagem-Info-BlackLives .info span {
+    color: #b68a35;
+}
+
+.info a {
+    color: #b68a35;
+    text-decoration: none;
+}
+
+.botao-ouvir {
+    width: 105px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0;
+    border: 1px solid #b68a35;
+    background: transparent;
+    color: #b68a35;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 8px;
+}
+
+.botao-ouvir:hover {
+    background: #b68a35;
+    color: #000000 !important;
+}
+
+/* =========================================================
+   FOTO DESTAQUE
+   ========================================================= */
+
+.fotoDestaque {
+    position: absolute;
+    right: 3%;
+    top: 0;
+    width: 45%;
+}
+
+.fotoDestaque img {
+    width: 490px;
+    height: 295px;
+    display: block;
+    margin-left: auto;
+    object-fit: cover;
+    margin-right: 60px;
+    border: 2px solid #b68a35;
+}
+
+.fotoDestaque p {
+    margin: 5px 0 0;
+    color: #b68a35;
+    font-size: 20px;
+    text-align: center;
+    margin-right: -35px;
+}
+
+/* =========================================================
+   CATEGORIAS
+   ========================================================= */
+
+.categoriasFotos {
+    position: absolute;
+    left: 2%;
+    bottom: 10px;
+}
+
+.categoriasFotos h3 {
+    margin: 0;
+    color: #b68a35;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.linha-decorativa {
+    width: 100px;
+    height: 1px;
+    margin: 2px 0;
+    background: #b68a35;
+}
+
+.categorias-links {
+    display: flex;
+    gap: 10px;
+}
+
+.categorias-links a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.categorias-links a:hover {
+    color: #b68a35;
+}
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .mosaicosInfos {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        min-height: 650px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: 25px 3% 120px;
+        box-sizing: border-box;
+    }
+
+    .playlist {
+        grid-column: 2;
+        width: 100%;
+        height: 920px;
+        margin-left: auto;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        background: rgba(90, 65, 35, 0.42);
+        border: 1px solid rgba(182, 138, 53, 0.25);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #b68a35 transparent;
+    }
+
+    .mosaicosInfos > p {
+        width: 70%;
+    }
+
+    .CapaDestaque {
+        width: 70%;
+    }
+
+    .fotoDestaque {
+        width: 40%;
+    }
+}

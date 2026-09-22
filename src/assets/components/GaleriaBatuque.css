@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+/* =========================================================
+   CONFIGURAÇÃO GERAL
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.batuquePage {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Cormorant Garamond', serif;
+    color: #ffffff;
+
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   PRIMEIRA PARTE
+   ========================================================= */
+
+.PrimeiraParte {
+    position: relative;
+    width: 100%;
+    height: 660px;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+/* =========================================================
+   PARTE ESQUERDA DA PRIMEIRA SEÇÃO
+   ========================================================= */
+
+.infosEsquerda {
+    position: absolute;
+    left: 3.5%;
+    top: 25px;
+    width: 43%;
+    height: 265px;
+    z-index: 5;
+}
+
+/* Título */
+
+.infosEsquerda > h2 {
+    width: max-content;
+    margin: 0 0 8px 0;
+    color: #b68a35;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   CITAÇÃO
+   ========================================================= */
+
+.infosEsquerda > p {
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.35;
+    text-align: justify;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+/* =========================================================
+   QUADRO DA ESQUERDA
+   ========================================================= */
+
+.quadro {
+    position: absolute;
+    left: 0;
+    top: 125px;
+    width: 317px;
+    height: 315px;
+    padding: 5px;
+
+    border: 2px solid #b68a35;
+    z-index: 3;
+    margin-top: 70px;
+}
+
+.quadro img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================================================
+   CATEGORIAS
+   ========================================================= */
+
+.categoria {
+    position: absolute;
+    left: 0;
+    top: 245px;
+    width: 300px;
+    z-index: 4;
+    margin-top: 280px;
+}
+
+.categoria h3 {
+    margin: 0;
+    color: #b68a35;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.linha-decorativa {
+    width: 180px;
+    height: 1px;
+    margin: 2px 0 4px;
+    background: #b68a35;
+}
+
+.categoria-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+}
+
+.categoria-links a {
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.categoria-links a:hover {
+    color: #b68a35;
+}
+
+/* =========================================================
+   FOTO GRANDE DA DIREITA
+   ========================================================= */
+
+.fotoBatuque {
+    position: absolute;
+    top: 15px;
+    right: 7%;
+    width: 42%;
+    z-index: 4;
+    margin-left: 80px;
+}
+
+.fotoBatuque img {
+    width: 490px;
+    height: 385px;
+    display: block;
+    object-fit: cover;
+    border: 2px solid #b68a35;
+    margin-left: 80px;
+}
+
+.fotoBatuque p {
+    width: 100%;
+    margin: 7px 0 0;
+    color: #b68a35;
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+    margin-left: -73px;
+}
+
+/* =========================================================
+   SEGUNDA PARTE
+   ========================================================= */
+
+.batuque {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgb(35, 22, 10),
+            rgb(96, 61, 24),
+            rgba(38, 25, 12, 0.78)
+        );
+}
+
+/* =========================================================
+   FUNDOS COM A IMAGEM fundoAmarelo.jpg
+   ========================================================= */
+
+.fotografias-fundo,
+.fundo-geral,
+.fundo-geral2,
+.fundo-geral3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.fotografias-fundo img,
+.fundo-geral img,
+.fundo-geral2 img,
+.fundo-geral3 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Camada principal */
+
+.fotografias-fundo {
+    z-index: 0;
+    opacity: 0.34;
+}
+
+/* Camadas extras */
+
+.fundo-geral {
+    z-index: 0;
+    opacity: 0.12;
+}
+
+.fundo-geral2 {
+    z-index: 0;
+    opacity: 0.10;
+}
+
+.fundo-geral3 {
+    z-index: 0;
+    opacity: 0.12;
+}
+
+/* =========================================================
+   LADO ESQUERDO
+   ========================================================= */
+
+.ladoEsquerdo {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 520px;
+    overflow: hidden;
+}
+
+/* =========================================================
+   INFORMAÇÕES DO BATUQUE
+   ========================================================= */
+
+.infos {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    padding: 28px 4% 25px;
+    color: #ffffff;
+}
+
+/* =========================================================
+   TÍTULO BATUQUE
+   ========================================================= */
+
+.infos > h1 {
+    margin: 0 0 5px;
+    color: #b68a35;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* =========================================================
+   BOTÃO EXPLORAR
+   ========================================================= */
+
+.infos > button {
+    width: 130px;
+    height: 28px;
+    margin: 5px 0 0;
+    padding: 0;
+    background: transparent;
+    border: 1px solid #b68a35;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* =========================================================
+   SOBRE
+   ========================================================= */
+
+.infos > h2 {
+    margin: 14px 0 5px;
+    color: #b68a35;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* =========================================================
+   TEXTO SOBRE
+   ========================================================= */
+
+.infos > p {
+    width: 86%;
+    max-width: 390px;
+    margin: 0;
+    padding: 9px 11px;
+    border: 1px solid rgba(182, 138, 53, 0.65);
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1.35;
+    text-align: justify;
+}
+
+/* =========================================================
+   FOTO DA DANDARA
+   ========================================================= */
+
+.fotoInfo {
+    position: absolute;
+    left: 4%;
+    top: 218px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.fotoInfo img {
+    width: 130px;
+    height: 105px;
+    display: block;
+    padding: 5px;
+    object-fit: cover;
+    border: 2px solid #b68a35;
+}
+
+.fotoInfo h2 {
+    width: 110px;
+    margin: 0;
+    color: #b68a35;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+/* =========================================================
+   BOTÕES INFERIORES
+   ========================================================= */
+
+.Batuque-botoes {
+    position: absolute;
+    left: 4%;
+    bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.Batuque-botoes button {
+    height: 30px;
+    padding: 0 25px;
+    background: transparent;
+    border: 1px solid #b68a35;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Batuque-botoes button:last-child {
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #b68a35;
+}
+
+/* =========================================================
+   MOSAICO
+   ========================================================= */
+
+.mosaico {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    min-height: 520px;
+    padding: 35px 5% 35px 4%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 28px 30px;
+    align-content: center;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.CardBatuque,
+.CardDanca,
+.CardComunidade,
+.Fotos {
+    width: 100%;
+    height: 175px;
+    padding: 10px;
+    border: 2px solid rgba(182, 138, 53, 0.70);
+    background: rgba(90, 65, 35, 0.32);
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.CardBatuque:hover,
+.CardDanca:hover,
+.CardComunidade:hover,
+.Fotos:hover {
+    background: rgba(90, 65, 35, 0.50);
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   IMAGENS DOS CARDS
+   ========================================================= */
+
+.CardBatuque img,
+.CardDanca img,
+.CardComunidade img,
+.Fotos img {
+    width: 100%;
+    height: 105px;
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================================================
+   TÍTULOS DOS CARDS
+   ========================================================= */
+
+.CardBatuque h3,
+.CardDanca h3,
+.CardComunidade h3,
+.Fotos h3 {
+    margin: 7px 0 0;
+    color: #b68a35;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/* =========================================================
+   VER MAIS
+   ========================================================= */
+
+.CardBatuque p,
+.CardDanca p,
+.CardComunidade p,
+.Fotos p {
+    margin: 3px 0 0;
+    color: #b68a35;
+    font-size: 10px;
+    line-height: 1;
+}
+
+/* =========================================================
+   TABLET / TELAS MENORES
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .PrimeiraParte {
+        height: 320px;
+    }
+
+    .infosEsquerda {
+        left: 3%;
+        width: 45%;
+    }
+
+    .infosEsquerda > h2 {
+        font-size: 14px;
+    }
+
+    .infosEsquerda > p {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .fotoBatuque {
+        right: 4%;
+        width: 45%;
+    }
+
+    .fotoBatuque img {
+        height: 175px;
+    }
+
+    .batuque {
+        grid-template-columns: 40% 60%;
+        min-height: 560px;
+    }
+
+    .ladoEsquerdo {
+        min-height: 560px;
+    }
+
+    .mosaico {
+        min-height: 560px;
+        gap: 22px;
+        padding: 30px 4%;
+    }
+
+    .CardBatuque,
+    .CardDanca,
+    .CardComunidade,
+    .Fotos {
+        height: 180px;
+    }
+}
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .PrimeiraParte {
+        height: 560px;
+    }
+
+    .infosEsquerda {
+        position: absolute;
+        left: 5%;
+        top: 20px;
+        width: 90%;
+        height: 300px;
+    }
+
+    .infosEsquerda > h2 {
+        width: 100%;
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .infosEsquerda > p {
+        width: 95%;
+        max-width: none;
+        font-size: 10px;
+    }
+
+    .quadro {
+        top: 125px;
+    }
+
+    .categoria {
+        top: 245px;
+    }
+
+    .fotoBatuque {
+        top: 350px;
+        left: 5%;
+        right: auto;
+        width: 90%;
+    }
+
+    .fotoBatuque img {
+        height: 175px;
+    }
+
+    .batuque {
+        display: block;
+        min-height: 1050px;
+    }
+
+    .ladoEsquerdo {
+        min-height: 520px;
+    }
+
+    .infos {
+        padding: 25px 5%;
+    }
+
+    .infos > h1 {
+        font-size: 34px;
+    }
+
+    .infos > p {
+        width: 90%;
+    }
+
+    .fotoInfo {
+        left: 5%;
+        top: 225px;
+    }
+
+    .Batuque-botoes {
+        left: 5%;
+    }
+
+    .mosaico {
+        width: 100%;
+        min-height: 500px;
+        padding: 20px 5% 40px;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .CardBatuque,
+    .CardDanca,
+    .CardComunidade,
+    .Fotos {
+        height: 175px;
+    }
+
+    .CardBatuque img,
+    .CardDanca img,
+    .CardComunidade img,
+    .Fotos img {
+        height: 95px;
+    }
+
+    .CardBatuque h3,
+    .CardDanca h3,
+    .CardComunidade h3,
+    .Fotos h3 {
+        font-size: 14px;
+    }
+}
