@@ -79,107 +79,129 @@ export function Batuque() {
 
                 <section className="batuque">
 
+                    {/* FUNDOS */}
+                    <div className="fotografias-fundo-Batuque">
+                        <img src={fundo} alt="Fundo amarelo" />
+                    </div>
 
+                    <div className="fundo-geral-Batuque">
+                        <img src={fundo} alt="Fundo geral" />
+                    </div>
+
+                    <div className="fundo-geral2-Batuque">
+                        <img src={fundo} alt="Fundo geral" />
+                    </div>
+
+                    <div className="fundo-geral3-Batuque">
+                        <img src={fundo} alt="Fundo geral" />
+                    </div>
+
+
+                    {/* LADO ESQUERDO */}
                     <div className="ladoEsquerdo">
-
-                        <div className="fotografias-fundo">
-                            <img
-                                src={fundo}
-                                alt="fundo amarelo"
-                            />
-                        </div>
-
-
-                        <div className="fundo-geral">
-                            <img
-                                src={fundo}
-                                alt="fundo geral"
-                            />
-                        </div>
-
-
-                        <div className="fundo-geral2">
-                            <img
-                                src={fundo}
-                                alt="fundo geral"
-                            />
-                        </div>
-
-
-                        <div className="fundo-geral3">
-                            <img
-                                src={fundo}
-                                alt="fundo geral"
-                            />
-                        </div>
-
-
 
                         <div className="infos">
 
-                            <h1>
-                                Batuque
-                            </h1>
+                            <h1>Batuque</h1>
 
                             <button>
                                 Explorar →
                             </button>
 
-                            <h2>
-                                Sobre:
-                            </h2>
+                            <h2>Sobre:</h2>
 
                             <p>
-                                O batuque nasce do encontro entre corpo, tambor e comunidade. Mais que música, é uma forma de expressão, memória e resistência.
+                                O batuque nasce do encontro entre corpo, tambor e comunidade.
+                                Mais que música, é uma forma de expressão, memória e resistência.
                             </p>
 
-
                             <div className="fotoInfo">
-                                <img src={Fotodestaque} alt="Dandara" />
+
+                                <img
+                                    src={Fotodestaque}
+                                    alt="Dandara"
+                                />
+
                                 <h2>
-                                    Porta-Voz da Resistência Negra
+                                    Dandara dos Palmares
                                 </h2>
+
                             </div>
 
                             <div className="Batuque-botoes">
 
-                                <button>
+                                <button className="btnOutros">
                                     Outros
                                 </button>
 
-                                <button>
+                                <button className="btnSair">
                                     ‹ Sair
                                 </button>
 
                             </div>
+
                         </div>
+
                     </div>
 
-                    <div className="mosaico">
 
-                        <div className="CardBatuque">
-                            <img src={batuque} alt="Card-Batuque" />
-                            <h3>Instrumentos</h3>
-                            <p>Ver Mais ⭢ </p>
-                        </div>
+                    {/* LADO DIREITO */}
+                    <div className="ladoDireito">
 
-                        <div className="CardDanca">
-                            <img src={capoeira} alt="Card-Danca" />
-                            <h3>Corpo e Movimento</h3>
-                            <p>Ver Mais ⭢</p>
-                        </div>
+                        <Link to="/instrumentos" className="card-link">
+                            <div className="CardBatuque">
+                                <img
+                                    src={batuque}
+                                    alt="Instrumentos"
+                                />
 
-                        <div className="CardComunidade">
-                            <img src={comunidade} alt="Card-Comunidade" />
-                            <h3>Comunidade</h3>
-                            <p>Ver Mais ⭢</p>
-                        </div>
+                                <h3>Instrumentos</h3>
 
-                        <div className="Fotos">
-                            <img src={outros} alt="Card-Fotos" />
-                            <h3>Fotos e Vídeos</h3>
-                            <p>Ver Mias ⭢</p>
-                        </div>
+                                <p>Ver Mais →</p>
+                            </div>
+                        </Link>
+
+
+                        <Link to="/corpo-movimento" className="card-link">
+                            <div className="CardDanca">
+                                <img
+                                    src={capoeira}
+                                    alt="Corpo e Movimento"
+                                />
+
+                                <h3>Corpo e Movimento</h3>
+
+                                <p>Ver Mais →</p>
+                            </div>
+                        </Link>
+
+
+                        <Link to="/comunidade" className="card-link">
+                            <div className="CardComunidade">
+                                <img
+                                    src={comunidade}
+                                    alt="Comunidade"
+                                />
+
+                                <h3>Comunidade</h3>
+
+                                <p>Ver Mais →</p>
+                            </div>
+                        </Link>
+
+
+                        <Link to="/fotos-videos" className="card-link">
+                            <div className="Fotos">
+                                <img
+                                    src={outros}
+                                    alt="Fotos e Vídeos"
+                                />
+
+                                <h3>Fotos e Vídeos</h3>
+
+                                <p>Ver Mais →</p>
+                            </div>
+                        </Link>
 
                     </div>
                 </section>

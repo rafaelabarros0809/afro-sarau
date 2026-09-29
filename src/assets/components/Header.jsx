@@ -30,7 +30,7 @@ export function Header() {
 
           <div
             className={`nav-item ${activeTab === "/" ? "active" : ""}`}
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
           >
             Home
           </div>

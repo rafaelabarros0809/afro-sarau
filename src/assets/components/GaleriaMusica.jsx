@@ -117,12 +117,12 @@ export function Musica() {
 
                         <p>
                             “A memória negra atravessa gerações.
-                            Ela vive nas histórias, nas manifestações <br />culturais,
-                            nas lutas e nas conquistas de um povo que, apesar das
-                            tentativas de <br /> apagamento, continua escrevendo sua própria  
-                          
+                            Ela vive nas histórias, nas manifestações culturais,
+                            nas lutas e <br /> nas conquistas de um povo que, apesar das
+                            tentativas de  apagamento, continua escrevendo sua própria
 
-                            <span> história.</span>”
+
+                            <span>  <br />história.</span>”
                         </p>
 
 
@@ -162,7 +162,7 @@ export function Musica() {
 
                             <p>
                                 “Onde tentaram apagar nossa história,
-                               <br /> nós escrevemos a nossa.”
+                                 nós escrevemos a nossa.”
                             </p>
 
                         </div>
@@ -171,12 +171,14 @@ export function Musica() {
 
 
                     <div className="categoriasFotos">
- 
-                       <h3>
+
+                        <h3>
                             Categorias
                         </h3>
 
-                        <div className="linha-decorativa"></div>
+                        <div className="linha-decorativa">
+
+                        </div>
 
                         <div className="categorias-links">
 
@@ -205,37 +207,37 @@ export function Musica() {
 
                 <section className="Musica">
 
-                    
-                              <div className="fotografias-fundo">
-                                <img
-                                  src={fundo}
-                                  alt="fundo amarelo"
-                                />
-                              </div>
-                    
-                    
-                              <div className="fundo-geral">
-                                <img
-                                  src={fundo}
-                                  alt="fundo geral"
-                                />
-                              </div>
-                    
-                    
-                              <div className="fundo-geral2">
-                                <img
-                                  src={fundo}
-                                  alt="fundo geral"
-                                />
-                              </div>
-                    
-                    
-                              <div className="fundo-geral3">
-                                <img
-                                  src={fundo}
-                                  alt="fundo geral"
-                                />
-                              </div>
+
+                    <div className="fotografias-fundo-Musica">
+                        <img
+                            src={fundo}
+                            alt="fundo amarelo"
+                        />
+                    </div>
+
+
+                    <div className="fundo-geral-Musica">
+                        <img
+                            src={fundo}
+                            alt="fundo geral"
+                        />
+                    </div>
+
+
+                    <div className="fundo-geral2-Musica">
+                        <img
+                            src={fundo}
+                            alt="fundo geral"
+                        />
+                    </div>
+
+
+                    <div className="fundo-geral3-Musica">
+                        <img
+                            src={fundo}
+                            alt="fundo geral"
+                        />
+                    </div>
 
                     <div className="mosaicosInfos">
 
@@ -269,13 +271,13 @@ export function Musica() {
 
                         <div className="Musica-botoes">
 
-                            <button>
+                            <Link>
                                 Outros
-                            </button>
+                            </Link>
 
-                            <button>
+                            <Link to="/home">
                                 ‹ Sair
-                            </button>
+                            </Link>
 
                         </div>
 
@@ -330,7 +332,7 @@ export function Musica() {
 
                             {/* musica 3 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 3 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[2]);
@@ -351,7 +353,7 @@ export function Musica() {
 
                             {/* musica 4 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 4 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[3]);
@@ -372,7 +374,7 @@ export function Musica() {
 
                             {/* musica 5 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 5 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[4]);
@@ -393,7 +395,7 @@ export function Musica() {
 
                             {/* musica 6 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 6 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[5]);
@@ -414,7 +416,7 @@ export function Musica() {
 
                             {/* musica 7 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 7 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[6]);
@@ -435,7 +437,7 @@ export function Musica() {
 
                             {/* musica 8 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 8 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[7]);
@@ -456,7 +458,7 @@ export function Musica() {
 
                             {/* musica 9 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 9 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[8]);
@@ -477,7 +479,7 @@ export function Musica() {
 
                             {/* musica 10 */}
                             <div
-                                className={`musica-item ${musicaSelecionada?.id === 2 ? "musica-selecionada" : ""
+                                className={`musica-item ${musicaSelecionada?.id === 10 ? "musica-selecionada" : ""
                                     }`}
                                 onClick={() => {
                                     setMusicaSelecionada(musicas[9]);
@@ -554,7 +556,7 @@ export function Musica() {
                         </div>
 
                         <a href="https://open.spotify.com/playlist/00T6YfXuiZG8UV5MzsAong" className="botao-ouvir">
-                        Ouvir
+                            Ouvir
                         </a>
 
                     </div>

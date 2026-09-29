@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 
 
+/* =====================================================
+   RESET
+===================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -212,112 +216,86 @@ body {
 
 .fotografias {
     width: 100%;
+    min-height: 750px;
+
     display: grid;
     grid-template-columns: 320px 1fr;
     gap: 30px;
+
     position: relative;
-    overflow: hidden;
+
+    /*
+       O fundo precisa poder ultrapassar
+       visualmente a section sem ser cortado.
+    */
+    overflow: visible;
 }
 
 
 /* =====================================================
    FUNDOS
+   EFEITO DE LUZ DA SEGUNDA SECTION
 ===================================================== */
 
-.fundo-geral {
+.fotografias-fundo-fotos,
+.fundo-geral-fotos,
+.fundo-geral2-fotos,
+.fundo-geral3-fotos {
     position: absolute;
-    inset: 0;
+
+    margin-top: -20px;
+
+    left: 0;
+
     width: 100%;
-    height: 100%;
+    height: 769px;
+
     z-index: 0;
+
     pointer-events: none;
     overflow: hidden;
 }
 
 
-.fundo-geral img {
+.fotografias-fundo-fotos img,
+.fundo-geral-fotos img,
+.fundo-geral2-fotos img,
+.fundo-geral3-fotos img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 15%;
-    display: block;
-}
-
-
-.fundo-geral2 {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-
-.fundo-geral2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 18%;
-    display: block;
-}
-
-
-.fundo-geral3 {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-
-.fundo-geral3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 20%;
-    display: block;
-}
-
-
-.fotografias-fundo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-}
-
-
-.fotografias-fundo img {
-    width: 650px;
     height: 900px;
+
     object-fit: cover;
-    margin-left: 20px;
     display: block;
-    opacity: 45%;
+
+    opacity: 10%;
 }
 
 
 /* =====================================================
-   INFORMAÇÕES
+   CONTEÚDO DA SECTION
 ===================================================== */
 
 .fotografias-info {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
     margin-left: 60px;
+
     position: relative;
     z-index: 2;
 }
 
+
+.fotosmosaico {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   INFORMAÇÕES
+===================================================== */
 
 .fotografias-info h1 {
     color: #B68A35;
@@ -331,14 +309,21 @@ body {
 
 .fotografias-info > button {
     align-self: flex-start;
+
     padding: 20px 40px;
+
     background-color: transparent;
     border: 1px solid #8a692d;
+
     color: #cfcfcf;
+
     font-family: inherit;
     font-size: 0.85rem;
+
     cursor: pointer;
+
     transition: all 0.3s ease;
+
     margin-top: 20px;
 }
 
@@ -350,21 +335,30 @@ body {
 
 .fotografias-info h2 {
     margin: 30px 0 10px;
+
     color: #B68A35;
+
     font-size: 40px;
     font-weight: normal;
+
     font-family: 'Cormorant Garamond', serif;
 }
 
 
 .fotografias-info > p {
     width: 130%;
+
     padding: 20px;
+
     border: 1px solid #765b2b;
+
     background-color: rgba(0, 0, 0, 0.3);
+
     color: #c7c7c7;
+
     font-size: 15px;
     line-height: 1.5;
+
     margin-top: -1px;
 }
 
@@ -376,8 +370,11 @@ body {
 .fotografias-destaque {
     width: 200px;
     height: 200px;
+
     margin-top: 30px;
+
     overflow: hidden;
+
     border: 1px solid #B68A35;
 }
 
@@ -385,7 +382,9 @@ body {
 .fotografias-destaque img {
     width: 200px;
     height: 200px;
+
     object-fit: cover;
+
     transition: transform 0.3s ease;
 }
 
@@ -396,13 +395,18 @@ body {
 
 
 .fotografias-info h3 {
-    margin-top: 10px;
+    margin-top: 5px;
+
     color: #B68A35;
+
     font-size: 0.95rem;
+
     font-family: 'Cormorant Garamond', serif;
+
     display: flex;
     justify-content: center;
-    margin-right: 100px;
+
+    margin-right: 80px;
 }
 
 
@@ -413,37 +417,47 @@ body {
 .fotografias-botoes {
     display: flex;
     align-items: center;
+
     gap: 5px;
-    margin-top: 5px;
+
+    margin-top: 15px;
 }
 
 
-.fotografias-botoes button {
-    padding: 8px 20px;
-    background-color: transparent;
-    border: 1px solid #B68A35;
-    color: #d0d0d0;
-    font-family: inherit;
-    font-size: 0.85rem;
+.fotografias-botoes a {
+        height: 40px;
+    padding: 0 30px;
+    background: transparent;
+    border: 2px solid #b68a35;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 
-.fotografias-botoes button:hover {
+.fotografias-botoes a:hover {
     background-color: #B68A35;
     color: #121212;
 }
 
 
-.fotografias-botoes button:last-child {
+.fotografias-botoes a:last-child {
     border: none;
+
     color: #B68A35;
+
     padding: 8px 0;
 }
 
 
-.fotografias-botoes button:last-child:hover {
+.fotografias-botoes a:last-child:hover {
     background-color: transparent;
     color: #ffffff;
 }
@@ -455,6 +469,7 @@ body {
 
 .fotosmosaico {
     position: relative;
+
     z-index: 2;
 
     width: 354px;
@@ -467,6 +482,7 @@ body {
     box-sizing: border-box;
 
     transform: scale(1.6);
+
     transform-origin: top left;
 
     border: 2px solid #B68A35;
@@ -477,8 +493,11 @@ body {
 
 .fotosmosaico > div {
     position: absolute;
+
     overflow: hidden;
+
     box-sizing: border-box;
+
     background: #111111;
 }
 
@@ -486,8 +505,11 @@ body {
 .fotosmosaico img {
     width: 100%;
     height: 100%;
+
     display: block;
+
     object-fit: cover;
+
     transition: transform 0.4s ease;
 }
 
@@ -504,6 +526,7 @@ body {
 .foto1 {
     left: 0;
     top: 0;
+
     width: 150px;
     height: 150px;
 }
@@ -516,6 +539,7 @@ body {
 .foto2 {
     left: 163px;
     top: 0;
+
     width: 90px;
     height: 90px;
 }
@@ -528,6 +552,7 @@ body {
 .foto3 {
     left: 260px;
     top: 0;
+
     width: 90px;
     height: 90px;
 }
@@ -540,6 +565,7 @@ body {
 .foto4 {
     left: 163px;
     top: 98px;
+
     width: 187px;
     height: 60px;
 }
@@ -552,6 +578,7 @@ body {
 .foto5 {
     left: 0;
     top: 163px;
+
     width: 150px;
     height: 275px;
 }
@@ -564,6 +591,7 @@ body {
 .foto6 {
     left: 163px;
     top: 163px;
+
     width: 60px;
     height: 60px;
 }
@@ -576,6 +604,7 @@ body {
 .foto7 {
     left: 225px;
     top: 163px;
+
     width: 60px;
     height: 60px;
 }
@@ -588,6 +617,7 @@ body {
 .foto8 {
     left: 286px;
     top: 163px;
+
     width: 60px;
     height: 60px;
 }
@@ -600,6 +630,7 @@ body {
 .foto9 {
     left: 286px;
     top: 228px;
+
     width: 60px;
     height: 60px;
 }
@@ -612,6 +643,7 @@ body {
 .foto10 {
     left: 225px;
     top: 228px;
+
     width: 60px;
     height: 60px;
 }
@@ -624,6 +656,7 @@ body {
 .foto11 {
     left: 163px;
     top: 228px;
+
     width: 60px;
     height: 60px;
 }
@@ -636,6 +669,7 @@ body {
 .foto12 {
     left: 163px;
     top: 294px;
+
     width: 90px;
     height: 70px;
 }
@@ -648,6 +682,7 @@ body {
 .foto13 {
     left: 257px;
     top: 294px;
+
     width: 90px;
     height: 70px;
 }
@@ -660,6 +695,7 @@ body {
 .foto14 {
     left: 163px;
     top: 368px;
+
     width: 187px;
     height: 70px;
 }
@@ -667,8 +703,6 @@ body {
 
 /* =====================================================
    CARROSSEL OVERLAY
-   IMPORTANTE:
-   FICA FORA DO @MEDIA
 ===================================================== */
 
 .carrossel-overlay {
@@ -683,6 +717,7 @@ body {
     background: #bdbdbd67;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -709,6 +744,7 @@ body {
     gap: 18px;
 
     width: auto;
+
     max-width: 90vw;
 
     position: relative;
@@ -767,6 +803,7 @@ body {
 
 .carrossel-item.foto-secundaria:hover {
     opacity: 0.85;
+
     transform: scale(1.03);
 }
 
@@ -816,6 +853,7 @@ body {
     height: 42px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -842,6 +880,7 @@ body {
 
 .carrossel-seta:hover {
     background: #B68A35;
+
     color: #121212;
 
     transform: translateY(-50%) scale(1.05);
@@ -872,6 +911,7 @@ body {
     height: 42px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -920,9 +960,9 @@ body {
 
     .fotosmosaico {
         margin-left: 100px;
+
         transform: scale(1.2);
     }
-
 }
 
 
@@ -961,11 +1001,14 @@ body {
 
     .fotosmosaico {
         margin-left: 20px;
+
         transform: scale(0.95);
     }
 
 
-    /* CARROSSEL */
+    /* =================================================
+       CARROSSEL
+    ================================================= */
 
     .carrossel-conteudo {
         gap: 10px;
@@ -992,7 +1035,6 @@ body {
     .carrossel-seta.direita {
         right: 10px;
     }
-
 }
 
 
@@ -1046,5 +1088,4 @@ body {
 
         font-size: 26px;
     }
-
 }

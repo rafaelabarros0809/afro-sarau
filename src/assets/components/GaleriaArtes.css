@@ -1,0 +1,1010 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0d0b08;
+    color: #d4af37;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+/* =========================================================
+   PÁGINA PRINCIPAL
+   ========================================================= */
+
+.artesPage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 696px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #1c150c 0%,
+            #080604 100%
+        );
+}
+
+
+/* =========================================================
+   FUNDOS
+   ========================================================= */
+
+.fotografias-fundo-Artes,
+.fundo-geral-Artes,
+.fundo-geral2-Artes,
+.fundo-geral3-Artes {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.fotografias-fundo-Artes img,
+.fundo-geral-Artes img,
+.fundo-geral2-Artes img,
+.fundo-geral3-Artes img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    filter: blur(10px);
+}
+
+.fotografias-fundo-Artes {
+    opacity: 10%;
+}
+
+.fundo-geral-Artes {
+    opacity: 15%;
+}
+
+.fundo-geral2-Artes {
+    opacity: 15%;
+}
+
+.fundo-geral3-Artes {
+    width: 50%;
+    height: 100%;
+
+    opacity: 20%;
+
+    margin-left: 50%;
+}
+
+
+/* =========================================================
+   COLUNA ESQUERDA
+   ========================================================= */
+
+.artesConteudo {
+    position: absolute;
+
+    left: 5%;
+    top: 5%;
+
+    width: 31%;
+
+    height: 90%;
+
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   PARTE SUPERIOR ESQUERDA
+   ========================================================= */
+
+.ladoDireito {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+/* =========================================================
+   IMAGEM PEQUENA
+   ========================================================= */
+
+.arteMenor {
+    position: absolute;
+
+    top: 100px;
+    left: 0;
+
+    width: 222px;
+    height: 267px;
+
+    margin: 0;
+
+    margin-left: 200px;
+
+    border: 1px solid #b8860b;
+    padding: 6px;
+
+    background-color: rgba(0, 0, 0, 0.115);
+
+    box-shadow:
+        0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.arteMenor img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border: 1px solid rgba(184, 134, 11, 0.5);
+}
+
+
+/* =========================================================
+   CATEGORIAS
+   ========================================================= */
+
+.cartegorias-arte {
+    position: absolute;
+
+    top: 384px;
+    left: 200px;
+
+    width: 173px;
+
+
+    margin: 0;
+}
+
+.cartegorias-arte h3 {
+    font-size: 0.9rem;
+
+    font-weight: normal;
+
+    color: #a38a58;
+
+}
+
+.linha-decorativa-Artes {
+    width: 100%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b8860b,
+            transparent
+        );
+
+    margin-bottom: 8px;
+}
+
+.categoria-links-Artes {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: nowrap;
+}
+
+.categoria-links-Artes a {
+    color: #8c734b;
+
+    text-decoration: none;
+
+    font-size: 0.8rem;
+
+    white-space: nowrap;
+
+    transition: color 0.3s;
+}
+
+.categoria-links-Artes a:hover {
+    color: #e5c158;
+}
+
+
+/* =========================================================
+   TÍTULO ARTES
+   ========================================================= */
+
+.TituloArtes {
+    font-size: 3rem;
+
+    font-weight: 300;
+
+    color: #d4af37;
+
+    letter-spacing: 2px;
+
+    margin-top: 380px;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.8);
+
+        margin-left: 200px;
+}
+
+
+/* =========================================================
+   BOTÃO SAIBA MAIS
+   ========================================================= */
+
+.Button-SaibaMais {
+    background: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid #8c734b;
+
+    color: #d4af37;
+
+    padding: 6px 16px;
+
+    width: max-content;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 0.85rem;
+
+    transition: all 0.3s;
+
+    margin-top: -15px;
+
+    margin-left: 200px;
+}
+
+.Button-SaibaMais:hover {
+    background-color: rgba(212, 175, 55, 0.15);
+
+    border-color: #d4af37;
+}
+
+
+/* =========================================================
+   SOBRE
+   ========================================================= */
+
+.Sobre {
+    font-size: 1.1rem;
+
+    font-weight: normal;
+
+    color: #d4af37;
+
+    margin-top: 10px;
+}
+
+.textoArtes {
+    width: 100%;
+
+    border: 1px solid rgba(140, 115, 75, 0.4);
+
+    padding: 12px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(2px);
+
+    margin-top: 4px;
+}
+
+.textoArtes p {
+    font-size: 0.75rem;
+
+    line-height: 1.4;
+
+    color: #b39b71;
+
+    font-style: italic;
+
+    text-align: justify;
+}
+
+
+/* =========================================================
+   PARTE INFERIOR ESQUERDA
+   ========================================================= */
+
+.artesInferios {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+}
+
+.logo p {
+    font-size: 0.7rem;
+
+    color: #8c734b;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   BOTÕES INFERIORES
+   ========================================================= */
+
+.buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.buttons .Outros {
+    background: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid #8c734b;
+
+    color: #d4af37;
+
+    padding: 6px 16px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 0.85rem;
+}
+
+.buttons a {
+    color: #8c734b;
+
+    text-decoration: none;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   PAINEL DIREITO
+   ========================================================= */
+
+.artedestaque {
+    position: absolute;
+
+    right: 7%;
+
+    top: 5%;
+
+    width: 480px;
+    height: 700px;
+
+    z-index: 5;
+
+    background: rgba(15, 12, 8, 0.27);
+
+    border: 1px solid rgba(184, 134, 11, 0.4);
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.8);
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* =========================================================
+   IMAGEM DE DESTAQUE
+   ========================================================= */
+
+.DestaqueArtes {
+    position: relative;
+
+    width: 100%;
+    height: 520px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.DestaqueArtes img:first-child {
+    width: 90%;
+    height: 90%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   MOLDURA
+   ========================================================= */
+
+.DestaqueArtes img:nth-child(2) {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    object-fit: fill;
+}
+
+
+/* =========================================================
+   TÍTULO DO DESTAQUE
+   ========================================================= */
+
+.ornamentoArtes {
+    color: #d4af37;
+
+    font-size: 1rem;
+
+    margin-bottom: -10px;
+
+    margin-top: -15px;
+}
+
+.artedestaque h2 {
+    font-size: 2rem;
+
+    font-weight: 300;
+
+    color: #d4af37;
+}
+
+.Subtitulo {
+    font-size: 1rem;
+
+    color: #8c734b;
+
+    font-style: italic;
+
+    margin-top: -5px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   BOTÃO VER MAIS
+   ========================================================= */
+
+.Carrossel-Button {
+    background: rgba(0, 0, 0, 0.226);
+
+    border: 1px solid #8c734b;
+
+    color: #d4af37;
+
+    padding: 6px 24px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    transition: all 0.3s;
+
+    margin-top: -10px;
+}
+
+.Carrossel-Button:hover {
+    background-color: rgba(212, 175, 55, 0.2);
+
+    border-color: #d4af37;
+}   
+
+
+.carrosselOverlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 99999;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        rgba(8, 5, 3, 0.68);
+
+    /*
+       Desfoca tudo que está ATRÁS do overlay.
+    */
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation: aparecerCarrossel 0.25s ease;
+}
+
+
+@keyframes aparecerCarrossel {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   JANELA CENTRAL
+========================================================= */
+
+.carrosselJanela {
+    position: relative;
+
+    width: min(80vw, 650px);
+    height: min(80vh, 650px);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        rgba(30, 19, 9, 0.88);
+
+    border: 1px solid rgba(182, 138, 53, 0.75);
+
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.75);
+
+    padding: 60px 80px;
+}
+
+
+/* =========================================================
+   ÁREA DA IMAGEM
+========================================================= */
+
+.carrosselImagem {
+    position: relative;
+
+    width: 430px;
+    height: 430px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    /*
+       Moldura semelhante à caixa "Sobre"
+    */
+
+    padding: 10px;
+
+    border: 1px solid #b68a35;
+
+    background:
+        rgba(0, 0, 0, 0.18);
+
+    box-shadow:
+        inset 0 0 0 2px rgba(182, 138, 53, 0.12),
+        0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+
+/*
+   segunda linha da moldura
+*/
+
+.carrosselImagem::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 5px;
+
+    border: 1px solid rgba(182, 138, 53, 0.65);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   IMAGEM
+
+   TODAS terão exatamente o mesmo tamanho.
+========================================================= */
+
+.carrosselImagem img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border: none;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.35);
+
+    animation: trocarImagem 0.25s ease;
+}
+
+
+@keyframes trocarImagem {
+
+    from {
+        opacity: 0.4;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   BOTÃO FECHAR
+========================================================= */
+
+.carrosselFechar {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: 1px solid #b68a35;
+
+    color: #b68a35;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 27px;
+
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition: 0.25s ease;
+}
+
+
+.carrosselFechar:hover {
+    background: #b68a35;
+
+    color: #1b1109;
+}
+
+
+/* =========================================================
+   SETA ESQUERDA
+========================================================= */
+
+.carrosselAnterior {
+    position: absolute;
+
+    left: 18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    background: rgba(15, 9, 4, 0.75);
+
+    border: 1px solid #b68a35;
+
+    color: #b68a35;
+
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition: 0.25s ease;
+}
+
+
+.carrosselAnterior:hover {
+    background: #b68a35;
+
+    color: #1b1109;
+}
+
+
+/* =========================================================
+   SETA DIREITA
+========================================================= */
+
+.carrosselProxima {
+    position: absolute;
+
+    right: 18px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    background: rgba(15, 9, 4, 0.75);
+
+    border: 1px solid #b68a35;
+
+    color: #b68a35;
+
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition: 0.25s ease;
+}
+
+
+.carrosselProxima:hover {
+    background: #b68a35;
+
+    color: #1b1109;
+}
+
+
+/* =========================================================
+   CONTADOR
+========================================================= */
+
+.carrosselContador {
+    position: absolute;
+
+    bottom: 16px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #b68a35;
+
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .artedestaque {
+        right: 3%;
+    }
+
+    .ladoDireito {
+        left: 15px;
+    }
+
+    .artesInferios {
+        left: 15px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .artedestaque {
+        right: 10px;
+
+        width: 260px;
+    }
+
+    .ladoDireito {
+        width: 190px;
+    }
+
+    .DestaqueArtes {
+        width: 235px;
+        height: 360px;
+    }
+
+    .DestaqueArtes > img:first-child {
+        width: 215px;
+        height: 340px;
+    }
+
+    .DestaqueArtes > img:last-child {
+        width: 235px;
+        height: 360px;
+    }
+
+
+    /* CARROSSEL */
+
+    .carrosselJanela {
+        width: 94vw;
+        height: 90vh;
+
+        padding: 45px 40px;
+    }
+
+    .carrosselImagem {
+        width: min(70vw, 430px);
+        height: min(70vw, 430px);
+    }
+
+    .carrosselAnterior {
+        left: 8px;
+    }
+
+    .carrosselProxima {
+        right: 8px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .artedestaque {
+        right: 0;
+    }
+
+    .ladoDireito {
+        left: 10px;
+    }
+
+    .TituloArtes {
+        font-size: 38px;
+    }
+
+    .carrosselJanela {
+        width: 96vw;
+        height: 80vh;
+
+        padding: 40px 20px;
+    }
+
+    .carrosselImagem {
+        width: 75vw;
+        height: 75vw;
+
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .carrosselAnterior,
+    .carrosselProxima {
+        width: 40px;
+        height: 40px;
+
+        font-size: 28px;
+    }
+
+}

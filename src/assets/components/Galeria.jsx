@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 import { Header } from "./Header";
 
 import "./Galeria.css";
@@ -27,7 +27,7 @@ import foto14 from "../fotos/foto14.jpg";
 
 import fundo from "../fotos/fundoAmarelo.jpg";
 import { Musica } from "./GaleriaMusica";
-import { Link } from "react-router-dom";
+
 
 
 function Galeria() {
@@ -218,36 +218,6 @@ function Galeria() {
         <section className="fotografias">
 
 
-          <div className="fotografias-fundo">
-            <img
-              src={fundo}
-              alt="fundo amarelo"
-            />
-          </div>
-
-
-          <div className="fundo-geral">
-            <img
-              src={fundo}
-              alt="fundo geral"
-            />
-          </div>
-
-
-          <div className="fundo-geral2">
-            <img
-              src={fundo}
-              alt="fundo geral"
-            />
-          </div>
-
-
-          <div className="fundo-geral3">
-            <img
-              src={fundo}
-              alt="fundo geral"
-            />
-          </div>
 
 
           {/* INFORMAÇÕES */}
@@ -290,13 +260,13 @@ function Galeria() {
 
             <div className="fotografias-botoes">
 
-              <button>
+              <Link to={'/'}>
                 Outros
-              </button>
+              </Link>
 
-              <button>
+              <Link to={'/home'} className="button">
                 ‹ Sair
-              </button>
+              </Link>
 
             </div>
 
@@ -308,6 +278,8 @@ function Galeria() {
           ========================================= */}
 
           <div className="fotosmosaico">
+
+            
 
             <div className="foto1">
               <img
@@ -434,6 +406,38 @@ function Galeria() {
               />
             </div>
 
+          </div>
+
+          
+          <div className="fotografias-fundo-fotos">
+            <img
+              src={fundo}
+              alt="fundo amarelo"
+            />
+          </div>
+
+
+          <div className="fundo-geral-fotos">
+            <img
+              src={fundo}
+              alt="fundo geral"
+            />
+          </div>
+
+
+          <div className="fundo-geral2-fotos">
+            <img
+              src={fundo}
+              alt="fundo geral"
+            />
+          </div>
+
+
+          <div className="fundo-geral3-fotos">
+            <img
+              src={fundo}
+              alt="fundo geral"
+            />
           </div>
 
         </section>
